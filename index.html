@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қарши тумани пахта йиғим терими 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c7744;
+            --secondary: #5a8f5e;
+            --accent: #f0b33c;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .stats-bar {
+            display: flex;
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            justify-content: space-around;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 0 15px;
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            background: #e9ecef;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .tab.active {
+            background: white;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            color: var(--primary);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 20px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+        }
+        
+        .variant-1 th {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+        }
+        
+        .variant-2 tr:nth-child(even) {
+            background-color: #f2f8f4;
+        }
+        
+        .variant-2 th {
+            border-top: 2px solid var(--primary);
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .variant-3 {
+            border: 1px solid #dee2e6;
+        }
+        
+        .variant-3 th {
+            background-color: #e9f5ec;
+            color: var(--dark);
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .summary-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .summary-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .stats-bar {
+                flex-wrap: wrap;
+            }
+            
+            .stat-item {
+                flex: 0 0 50%;
+                margin-bottom: 15px;
+            }
+            
+            .tabs {
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <h1>Қарши тумани пахта йиғим терими 2025</h1>
+                        <div class="subtitle">Қашқадарё вилояти Қарши туманида пахта йиғим теримига тайёргарлик</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value">14,180</div>
+                <div class="stat-label">Экилган майдон (га)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">60,974</div>
+                <div class="stat-label">Ялпи ҳосил (тонна)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">14,100</div>
+                <div class="stat-label">Теримчилар сони</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">151</div>
+                <div class="stat-label">Отрядлар сони</div>
+            </div>
+        </div>
+
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>Кластер корхоналари</h3>
+                <div class="summary-item">
+                    <span>Жами корхоналар сони:</span>
+                    <strong>6</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Фермер хўжаликлари:</span>
+                    <strong>666 та</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Контурлар сони:</span>
+                    <strong>1,718 та</strong>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>Машиналар ва техника</h3>
+                <div class="summary-item">
+                    <span>Пахта териш машиналари:</span>
+                    <strong>30 та</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Транспорт тракторлари:</span>
+                    <strong>216 та</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Тиркамалар:</span>
+                    <strong>330 та</strong>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>Ташки этиш воситалари</h3>
+                <div class="summary-item">
+                    <span>Автобуслар талаби:</span>
+                    <strong>80 та</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Мавжуд дамас:</span>
+                    <strong>123 та</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Йўналишлар сони:</span>
+                    <strong>42 та</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="openTab('tab1')">Кластер корхоналари</div>
+            <div class="tab" onclick="openTab('tab2')">Отрядлар тақсимоти</div>
+            <div class="tab" onclick="openTab('tab3')">Техника ва воситалар</div>
+        </div>
+
+        <div id="tab1" class="tab-content active">
+            <div class="card">
+                <div class="card-header">
+                    Кластер корхоналари бўйича маълумотлар
+                    <span>2025 йил учун прогноз</span>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="variant-1">
+                            <thead>
+                                <tr>
+                                    <th>Корхона номи</th>
+                                    <th>Ф/х сони</th>
+                                    <th>Контурлар</th>
+                                    <th>Майдон (га)</th>
+                                    <th>Ҳосилдорлик (ц/га)</th>
+                                    <th>Ялпи ҳосил (т)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CLUSTER KHILAL MCHJ</td>
+                                    <td>35</td>
+                                    <td>92</td>
+                                    <td>756</td>
+                                    <td>43.0</td>
+                                    <td>3,251</td>
+                                </tr>
+                                <tr>
+                                    <td>Қарши агро кластер МЧЖ</td>
+                                    <td>244</td>
+                                    <td>439</td>
+                                    <td>3,624</td>
+                                    <td>43.0</td>
+                                    <td>15,583</td>
+                                </tr>
+                                <tr>
+                                    <td>SULTON TEX GROUP MCHJ</td>
+                                    <td>350</td>
+                                    <td>998</td>
+                                    <td>8,250</td>
+                                    <td>43.0</td>
+                                    <td>35,475</td>
+                                </tr>
+                                <tr>
+                                    <td>Қарши СИДЕС МЧЖ</td>
+                                    <td>2</td>
+                                    <td>9</td>
+                                    <td>75</td>
+                                    <td>43.0</td>
+                                    <td>323</td>
+                                </tr>
+                                <tr>
+                                    <td>Истиқбол соттон граин кооперация</td>
+                                    <td>10</td>
+                                    <td>85</td>
+                                    <td>700</td>
+                                    <td>43.0</td>
+                                    <td>3,010</td>
+                                </tr>
+                                <tr>
+                                    <td>Ўз хисобидан йетиштирганлар</td>
+                                    <td>25</td>
+                                    <td>95</td>
+                                    <td>775</td>
+                                    <td>43.0</td>
+                                    <td>3,332</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Жами</strong></td>
+                                    <td><strong>666</strong></td>
+                                    <td><strong>1,718</strong></td>
+                                    <td><strong>14,180</strong></td>
+                                    <td><strong>43.0</strong></td>
+                                    <td><strong>60,974</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    Ҳудудлар кесимида отрядлар тақсимоти
+                    <span>2025 йил учун прогноз</span>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="variant-2">
+                            <thead>
+                                <tr>
+                                    <th>Ҳудуд номи</th>
+                                    <th>Отрядлар сони</th>
+                                    <th>Теримчилар сони</th>
+                                    <th>Шартнома бўйича (тн)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Бешкент</td>
+                                    <td>11</td>
+                                    <td>1,025</td>
+                                    <td>4,630</td>
+                                </tr>
+                                <tr>
+                                    <td>Я.Омонов</td>
+                                    <td>17</td>
+                                    <td>1,625</td>
+                                    <td>5,848</td>
+                                </tr>
+                                <tr>
+                                    <td>Насаф</td>
+                                    <td>16</td>
+                                    <td>1,550</td>
+                                    <td>1,632</td>
+                                </tr>
+                                <tr>
+                                    <td>С.Рахимов</td>
+                                    <td>9</td>
+                                    <td>870</td>
+                                    <td>4,892</td>
+                                </tr>
+                                <tr>
+                                    <td>Чўли ота</td>
+                                    <td>15</td>
+                                    <td>1,420</td>
+                                    <td>5,337</td>
+                                </tr>
+                                <tr>
+                                    <td>Манғит</td>
+                                    <td>2</td>
+                                    <td>190</td>
+                                    <td>1,201</td>
+                                </tr>
+                                <tr>
+                                    <td>Истиқбол</td>
+                                    <td>13</td>
+                                    <td>1,240</td>
+                                    <td>4,756</td>
+                                </tr>
+                                <tr>
+                                    <td>ЎЗ.Мустақиллиги</td>
+                                    <td>4</td>
+                                    <td>390</td>
+                                    <td>1,122</td>
+                                </tr>
+                                <tr>
+                                    <td>Батош</td>
+                                    <td>2</td>
+                                    <td>180</td>
+                                    <td>469</td>
+                                </tr>
+                                <tr>
+                                    <td>Намуна</td>
+                                    <td>15</td>
+                                    <td>1,460</td>
+                                    <td>3,262</td>
+                                </tr>
+                                <tr>
+                                    <td>Ю.Хушвақтов</td>
+                                    <td>6</td>
+                                    <td>585</td>
+                                    <td>4,433</td>
+                                </tr>
+                                <tr>
+                                    <td>Чароғил</td>
+                                    <td>11</td>
+                                    <td>1,080</td>
+                                    <td>7,502</td>
+                                </tr>
+                                <tr>
+                                    <td>Ипак Йўли</td>
+                                    <td>10</td>
+                                    <td>1,100</td>
+                                    <td>5,651</td>
+                                </tr>
+                                <tr>
+                                    <td>А.Икромов</td>
+                                    <td>10</td>
+                                    <td>1,120</td>
+                                    <td>5,422</td>
+                                </tr>
+                                <tr>
+                                    <td>Янгибоғ</td>
+                                    <td>4</td>
+                                    <td>420</td>
+                                    <td>3,494</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Жами</strong></td>
+                                    <td><strong>151</strong></td>
+                                    <td><strong>14,100</strong></td>
+                                    <td><strong>60,974</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    Техника ва воситалар тўғрисида маълумот
+                    <span>2025 йил учун прогноз</span>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="variant-3">
+                            <thead>
+                                <tr>
+                                    <th>Техника тури</th>
+                                    <th>Мавжуд</th>
+                                    <th>Талаб</th>
+                                    <th>Техник ҳолати</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Пахта териш машиналари</td>
+                                    <td>30 та</td>
+                                    <td>120 тонна ёқилғи (1.3 млрд сўм)</td>
+                                    <td>Мавжуд</td>
+                                </tr>
+                                <tr>
+                                    <td>Транспорт тракторлари</td>
+                                    <td>216 та</td>
+                                    <td>216 та</td>
+                                    <td>216 та (100%)</td>
+                                </tr>
+                                <tr>
+                                    <td>Тиркамалар</td>
+                                    <td>330 та</td>
+                                    <td>330 та</td>
+                                    <td>330 та (100%)</td>
+                                </tr>
+                                <tr>
+                                    <td>Фартук</td>
+                                    <td>60,000</td>
+                                    <td>60,000</td>
+                                    <td>Тўлиқ</td>
+                                </tr>
+                                <tr>
+                                    <td>Ёпқич</td>
+                                    <td>660</td>
+                                    <td>660</td>
+                                    <td>Тўлиқ</td>
+                                </tr>
+                                <tr>
+                                    <td>Самовар</td>
+                                    <td>450</td>
+                                    <td>450</td>
+                                    <td>Тўлиқ</td>
+                                </tr>
+                                <tr>
+                                    <td>Қўл тарози</td>
+                                    <td>200</td>
+                                    <td>200</td>
+                                    <td>Тўлиқ</td>
+                                </tr>
+                                <tr>
+                                    <td>Сув идиш</td>
+                                    <td>750</td>
+                                    <td>750</td>
+                                    <td>Тўлиқ</td>
+                                </tr>
+                                <tr>
+                                    <td>Қозон ўчоқ</td>
+                                    <td>300</td>
+                                    <td>300</td>
+                                    <td>Тўлиқ</td>
+                                </tr>
+                                <tr>
+                                    <td>Дефолиантлар</td>
+                                    <td>139,635 л</td>
+                                    <td>126,870 л</td>
+                                    <td>Тўлиқ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Қарши тумани ҳокимлиги. Барча ҳуқуқлар himoyalangan.</p>
+            <p>Умумий штаб раҳбари: Қўлдошов Нуриддин - тел: 97-070-32-00</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+            
+            // Deactivate all tabs
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            
+            // Activate the selected tab and show its content
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
